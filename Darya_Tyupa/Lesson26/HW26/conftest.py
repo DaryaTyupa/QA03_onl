@@ -9,11 +9,3 @@ def driver():
     driver = Firefox()
     yield driver
     driver.quit()
-
-#TODO
-@pytest.fixture()
-def main_page(driver):
-    page = MainPage(driver)
-
-    page.open()
-    return
